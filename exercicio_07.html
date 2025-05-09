@@ -1,20 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bootstrap</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+    integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous" />
 </head>
 
 <!-- navbar -->
 
 <body class="bg-secondary-subtle">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg" style="background-color: lightblue;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#carousel">8Q Comics</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -22,16 +22,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#cards">Classic Comics</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#footer">Footer</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <li class="nav-item"></li>
+          <a class="nav-link" href="#newsletter">NewsLetter</a>
           </li>
         </ul>
       </div>
@@ -39,57 +36,145 @@
   </nav>
 
   <!-- carousel -->
-  <div id="carouselExampleIndicators" class="carousel slide">
+  <div id="carousel" class="carousel slide carousel-dark">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner">
+    <div class="carousel-inner d-flex justify-items-center">
       <div class="carousel-item active">
-        <img src="..." class="d-block w-100" alt="...">
+        <img src="https://shopee.com.br/blog/wp-content/uploads/2022/02/melhores-hqs-para-comecar-a-ler.jpg"
+          class="d-block w-100" alt="..." />
       </div>
       <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
+        <img
+          src="https://www.escola-panamericana.com.br/wp-content/uploads/2021/06/7W3yNpqA5GBYvsDIrXIFD4FCedkvWsk4H9VfDH5w.jpeg"
+          class="d-block w-100" alt="..." />
       </div>
       <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
+        <img
+          src="https://segredosdomundo.r7.com/wp-content/uploads/2020/07/dc-comics-origem-e-historia-da-editora-de-quadrinhos.jpg"
+          class="d-block w-100" alt="..." />
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
 
   <!-- grid -->
-  <div class="container-fluid text-center text-light rounded-3" style="height: 100vh;">
-    <div class="row" style="height: 100%;">
-      <div class="col-12 col-md-6 col-lg-4 bg-primary p-3 rounded-5">
-        <h1>1</h1>
+  <div class="text-center mt-5" id="cards">
+    <div class="mb-5">
+
+      <h1>Classic Comics</h1>
+    </div>
+    <div class="d-flex gap-5 flex-wrap justify-content-center">
+      <div class="card" style="width: 18rem;">
+        <img src="https://veja.abril.com.br/wp-content/uploads/2020/11/batman.jpg?quality=70&strip=info&w=720&crop=1"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Detective Comics #27</h5>
+          <p class="card-text">O personagem apareceu pela primeira vez na revista Detective Comics #27 (Maio de 1939,
+            cf.
+            data da capa). Batman tornou-se tão popular que ganhou uma série regular de quadrinhos homônima própria, que
+            começou a ser publicada na Primavera [do Hemisfério Norte, cf. data da capa — Junho] de 1940.</p>
+          <a href="https://pt.wikipedia.org/wiki/Batman_(revista_em_quadrinhos)#:~:text=O%20personagem%20apareceu%20pela%20primeira,capa%20%E2%80%94%20Junho%5D%20de%201940."
+            class="btn btn-primary">Go to site</a>
+        </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4 bg-success p-3 rounded-5">
-        <h1>2</h1>
+
+      <div class="card rounded-3 shadow" style="width: 18rem;">
+        <img src="https://lumiere-a.akamaihd.net/v1/images/amazing_fantasy_spider-man_f724f882.jpeg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Amazing Fantasy #15</h5>
+          <p class="card-text">Em agosto de 1962, Stan Lee e Steve Ditko lançaram aquela que seria um dos quadrinhos
+            mais
+            icônicos da Marvel Comics: Amazing Fantasy #15 e a primeira aparição do Homem-Aranha!</p>
+          <a href="https://www.disney.com.br/novidades/tbt-da-marvel-a-primeira-aparicao-do-homem-aranha-em-amazing-fantasy-15#:~:text=Em%20agosto%20de%201962%2C%20Stan,primeira%20apari%C3%A7%C3%A3o%20do%20Homem%2DAranha!"
+            class="btn btn-primary">Go to site</a>
+        </div>
       </div>
-      <div class="col-12 col-md-12 col-lg-4 bg-secondary p-3 rounded-5">
-        <h1>3</h1>
+
+      <div class="card" style="width: 18rem;">
+        <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/5/5a/Action_Comics_1.jpg/250px-Action_Comics_1.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Action Comics No. 1</h5>
+          <p class="card-text">Lançado em 1938, Action Comics No. 1 é considerado um dos quadrinhos mais importantes de
+            todos os tempos. Em suas páginas, Jerry Siegel e Joe Shuster apresentaram o Superman ao mundo, lançando o
+            conceito de super-heróis na forma que é hoje tão celebrada nas mais diversas mídias.</p>
+          <a href="https://www.omelete.com.br/dc-comics/superman-action-comics-no1-leilao#:~:text=Lan%C3%A7ado%20em%201938%2C%20Action%20Comics,celebrada%20nas%20mais%20diversas%20m%C3%ADdias."
+            class="btn btn-primary">Go to site</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2022/04/captain-america-1-hq-760x1154.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Captain American Comics #1</h5>
+          <p class="card-text">Criado por Joe Simon e Jack Kirby, em 1941, sua primeira aparição do personagem ocorreu
+            na
+            revista em quadrinhos Captain American Comics #1, da Timely Comics.</p>
+          <a href="https://pt.wikipedia.org/wiki/Capit%C3%A3o_Am%C3%A9rica#:~:text=Criado%20por%20Joe%20Simon%20e%20Jack%20Kirby%2C%20em%201941%2C%20sua,%231%2C%20da%20Timely%20Comics."
+            class="btn btn-primary">Go to site</a>
+        </div>
       </div>
     </div>
-  </div>
+
+    <form class="was-validated container mt-5" id="newsletter">
+      <div class="mt-3">
+        <h1>NewsLetter Subscription</h1>
+      </div>
+      <div class="mb-3">
+        <label for="validationName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="validationName" required>
+        <div class="invalid-feedback">
+          Please enter a Name.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="validationEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="validationEmail" required>
+        <div class="invalid-feedback">
+          Please enter a valid email.
+        </div>
+      </div>
+
+      <div class="form-check mb-3 d-flex gap-2 flex-wrap ">
+        <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+        <label class="form-check-label" for="validationFormCheck1">I accept the terms of use</label>
+        <div class="invalid-feedback d-flex justify-content-start">Accept the terms of use</div>
+      </div>
+
+      <div class="d-flex justify-content-center mb-3">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+    </form>
+
+    <footer class="mt-5 p-5 mb-0" id="footer" style="background-color: lightblue; height: 20vh;">
+      <div class="text-center">
+        <p>© 2025 Lucas Miguel Leite</p>
+      </div>
+      <div class="text-center">
+        <a href="https://github.com/lucasmiguelleite">GitHub</a>
+        <a href="https://www.linkedin.com/in/lucas-miguel-leite-6138ba299/">LinkedIn</a>
+      </div>
+    </footer>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
